@@ -1,6 +1,6 @@
 
+import { useMemo } from 'react';
 import { Navigate, useParams, useNavigate } from 'react-router-dom';
-import { ImagenHeroe } from '../components/ImagenHeroe';
 import { obtenerHeroePorId } from '../helpers';
 
 
@@ -10,7 +10,7 @@ export const Heroe = () => {
   const { id } = useParams();
   //console.log(id);
 
-  const heroe = obtenerHeroePorId(id);
+  const heroe = useMemo(() => obtenerHeroePorId(id), [id]); //el useMemo es para que solo se ejecute una vez ); 
   //console.log(heroe);
 
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ export const Heroe = () => {
 
     <div className='row m-5'>
       <div className='col-4'>
-        <img src={`../src/assets/heroes/${id}.jpg`} alt={heroe.superhero} className='img-thumbnail' />
+        <img src={`../src/assets/heroes/${id}.jpg`} alt={heroe.superhero} className='img-thumbnail animate__animated animate__fadeInLeft' />
       </div>
 
       <div className="col-8">

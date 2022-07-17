@@ -1,5 +1,6 @@
 import {  Route, Routes } from 'react-router-dom'
-import { Login } from '../auth';
+import { Login } from '../auth/pages/Login';
+
 
 
 //Mis imports

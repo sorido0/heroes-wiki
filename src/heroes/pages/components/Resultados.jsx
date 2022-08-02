@@ -28,12 +28,12 @@ export const Resultados = () => {
             {
                 (q === "")
                     ?
-                    <div className="alert alert-primary"> 
+                    <div className="alert alert-primary animate__animated animate__fadeIn"> 
                         <p> 😎 Realiza una busqueda <span> ... </span> </p> 
                     </div>
                     :
                     (heroes.length === 0) &&
-                    <div className="alert alert-danger">
+                    <div className="alert alert-danger animate__animated animate__fadeIn">
                         No hay resultados ... <b> {q} </b>
                     </div>
 

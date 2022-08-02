@@ -1,15 +1,25 @@
+
+import { useContext } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { Buscar } from '../../heroes/pages';
+import { AuthProvider } from '../../auth/context';
+import { AuthContext } from './../../auth/context/AuthContext';
 
 
 export const Navbar = () => {
 
-    const navegar = useNavigate();
+    //con el useContexte y AuthContext podemos hacer a los valores del usuario 
+    // Como tenemos acceso al usuria podemos renderizar su nombre 
+     const { user, onLogout } = useContext( AuthContext);
+     console.log(user)
+    
+     const navegar = useNavigate();
 
     const elogin = () => {
         navegar('/Login',{
             replace: true
         });
+
+        onLogout();
     }
 
     return (
@@ -54,7 +64,7 @@ export const Navbar = () => {
                 <ul className="navbar-nav ml-auto">
 
                     <samp className='navbar-item nav-link text-primary'> 
-                        soridoDev 
+                        {user?.name} 
                         </samp>
                     <button
                         className='nav-item nav-link btn'

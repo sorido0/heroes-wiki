@@ -10,7 +10,7 @@ import { HeroesWikiApp } from './HeroesWikiApp';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-    <HeroesWikiApp />
+      <HeroesWikiApp />
     </BrowserRouter>
   </React.StrictMode>
 );

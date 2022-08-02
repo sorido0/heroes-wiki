@@ -8,7 +8,7 @@ export const InfoHeores = ({ value }) => {
     const estamoAqui = useMemo(() => cojerHeores(value), [value]); 
 
     return (
-        <div className='row wows-cols-1 row-cols-md-3 g-3'>
+        <div className='row wows-cols-1 row-cols-md-5 g-4'>
 
             {estamoAqui.map(heroe =>
             (

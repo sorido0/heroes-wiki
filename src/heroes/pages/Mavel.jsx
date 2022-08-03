@@ -1,6 +1,8 @@
 
 import { InfoHeores } from '../components/InfoHeores';
 
+
+// el componente que muesta la informacion de los heroes de marvel
 export const Marvel = () => {
 
     return (

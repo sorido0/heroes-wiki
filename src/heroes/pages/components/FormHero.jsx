@@ -7,7 +7,7 @@ export const FormHero = ( q="" ) => {
      // useNavigate() para obtener la navigate de la url y se importa de react-router-dom
      const navigate = useNavigate();
 
-    console.log(q);
+   // console.log(q);
 
     /// Se llama el hook useForms para que se pueda usar el formulario
     // Se le los parametros que se quiere en el formulario tomando en cuenta que "name" es el nombre del input y "value" es el valor que se quiere que tenga el input

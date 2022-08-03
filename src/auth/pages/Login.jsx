@@ -8,14 +8,22 @@ export const Login = () => {
     // con el useContexte y AuthContext podemos usar la funcion onLogin
     const { onLogin } = useContext(AuthContext);
 
+    // con el useNavigate podemos usar la funcion navigate
     const enHome = useNavigate();
 
     const eLogin = () => {
 
+        // Para saber la busqueda anterior
+        //localStorage.getItem es para obtener el valor guardado en lastPath en el localStorage
+        const lastPath = localStorage.getItem('lastPath') || '/';
+
+        console.log(lastPath);
+       
         // Se envia el nombre del usuario al contexto
         onLogin('sorido0');
 
-        enHome('/', {
+        // Se envia al usuario a la ruta anterior o a la ruta home
+        enHome(lastPath, {
             replace: true
             });
     }

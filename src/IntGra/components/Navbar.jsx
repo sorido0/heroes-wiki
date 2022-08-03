@@ -15,7 +15,8 @@ export const Navbar = () => {
      const navegar = useNavigate();
 
     const elogin = () => {
-        navegar('/Login',{
+        location.reload();
+        navegar('/login',{
             replace: true
         });
 

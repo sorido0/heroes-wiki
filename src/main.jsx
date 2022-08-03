@@ -8,8 +8,11 @@ import './Estilos.css'
 import { HeroesWikiApp } from './HeroesWikiApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  // Modo estricto es algo de react 
   <React.StrictMode>
+    {/* Browser routes es para tener las rutas privadas y publivas  */}
     <BrowserRouter>
+        {/* Es el componente donde se encuentra el router de las rutas  */}
       <HeroesWikiApp />
     </BrowserRouter>
   </React.StrictMode>

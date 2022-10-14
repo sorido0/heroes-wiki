@@ -24,13 +24,13 @@ export const AuthProvider = ({ children }) => {
     const [state, dispatch] = useReducer(authReducer, estadoInicial, init);
 
     // Creamos la funcion onLogin
-    const onLogin = (name = '') => {
+    const onLogin = (name = 'mmg') => {
 
-        const user = { id: 'sorido0' , name };
+        const user = { id: 'yunito' , name };
 
         const action = {
             type: types.login,
-            payload:user
+            payload: user
         }
 
         localStorage.setItem('user', JSON.stringify(user));

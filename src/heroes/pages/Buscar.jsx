@@ -15,6 +15,7 @@ export const Buscar = () => {
   
     return (
         <>
+        
             <div className="container">
                 <h1> Buscar heroe </h1>
                 <br />

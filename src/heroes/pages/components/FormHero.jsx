@@ -20,6 +20,7 @@ export const FormHero = ( q="" ) => {
     // se recibe lo que esta dentro del formulario 
     const handleSubmit = (e) => {
         // se evita que se recargue la pagina
+       
         e.preventDefault();
 
         // Validar los datos del formulario
@@ -36,6 +37,7 @@ export const FormHero = ( q="" ) => {
         });
 
     }
+    
     return (
         <>
             <h4> Buscar </h4>

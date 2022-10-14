@@ -20,7 +20,7 @@ export const Login = () => {
         console.log(lastPath);
        
         // Se envia el nombre del usuario al contexto
-        onLogin('sorido0');
+        onLogin('Yunito');
 
         // Se envia al usuario a la ruta anterior o a la ruta home
         enHome(lastPath, {

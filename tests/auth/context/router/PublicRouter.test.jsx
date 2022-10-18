@@ -24,7 +24,7 @@ describe('Pruebas en el publicRouter', () => {
         );
 
         // Se busca el texto Hola Mundo
-        screen.debug();
+        //screen.debug();
         // creamos el expect
         expect(screen.getByText('Rutas publicas')).toBeTruthy();
 
@@ -69,7 +69,7 @@ describe('Pruebas en el publicRouter', () => {
         );
 
         // se busca el texto de la pagina de marvel
-        screen.debug();
+        //screen.debug();
         // creamos el expect
         expect(screen.getByText('Pagina de Marvel')).toBeTruthy();
 

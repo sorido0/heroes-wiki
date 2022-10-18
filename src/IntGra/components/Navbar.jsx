@@ -10,7 +10,7 @@ export const Navbar = () => {
     //con el useContexte y AuthContext podemos hacer a los valores del usuario 
     // Como tenemos acceso al usuria podemos renderizar su nombre 
      const { user, onLogout } = useContext( AuthContext);
-     console.log(user)
+     //console.log(user)
     
      const navegar = useNavigate();
 

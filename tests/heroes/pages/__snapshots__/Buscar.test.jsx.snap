@@ -19,10 +19,13 @@ exports[`Pruebas en el componente <Buscar> Debe de mostrar los valores por defec
            Buscar 
         </h4>
         <hr />
-        <form>
+        <form
+          data-testid="form-test"
+        >
           <input
             autocomplete="off"
             class="form-control"
+            data-testid="input-test"
             id="BuscarText"
             name="BuscarText"
             placeholder="Buscar heroe"

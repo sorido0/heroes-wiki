@@ -33,7 +33,7 @@ export const Resultados = () => {
                     </div>
                     :
                     (heroes.length === 0) &&
-                    <div className="alert alert-danger animate__animated animate__fadeIn">
+                    <div className="alert alert-danger animate__animated animate__fadeIn" id="resultado-test" data-testid="resultado-test">
                         No hay resultados ... <b> {q} </b>
                     </div>
 

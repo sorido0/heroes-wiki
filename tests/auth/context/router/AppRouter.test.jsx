@@ -24,7 +24,7 @@ describe('Pruebas en el <AppRouter>', () => {
         );
 
         // Se renderiza el componente
-        screen.debug();
+        //screen.debug();
 
         // Se espera que el componente Login este en el documento
         expect(screen.getByText("Login")).toBeTruthy();
@@ -52,7 +52,7 @@ describe('Pruebas en el <AppRouter>', () => {
         );
 
         // se renderiza el componente
-        screen.debug();
+        //screen.debug();
 
         // se espera que el componente marvel este en el documento
         expect(screen.getAllByText("Marvel").length ).toBeGreaterThanOrEqual(1);

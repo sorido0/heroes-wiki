@@ -18,7 +18,7 @@ export const PrivateRouter = ({ children }) => {
 
     // localStorage.setItem es para guardar el valor de la ultima busqueda o ubicacion del usario en el localStorage
     localStorage.setItem('lastPath', lastPath);
-    console.log(lastPath);
+    //console.log(lastPath);
 
   return (logged) // Si el usuario esta logueado se renderiza el componente
     ? children

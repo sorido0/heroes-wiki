@@ -42,8 +42,9 @@ export const FormHero = ( q="" ) => {
         <>
             <h4> Buscar </h4>
             <hr />
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} data-testid="form-test">
                 <input
+                    data-testid="input-test"
                     type="text"
                     name="BuscarText"
                     id="BuscarText"

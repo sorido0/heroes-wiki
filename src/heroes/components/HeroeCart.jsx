@@ -9,7 +9,7 @@ export const HeroeCart = ({
   first_appearance,
   characters
 }) => {
-  const ruta = `src/assets/heroes/${id}.jpg`;
+  const ruta = `./src/assets/heroes/${id}.jpg`;
 
   return (
 

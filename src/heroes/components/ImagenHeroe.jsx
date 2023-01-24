@@ -2,7 +2,7 @@
 
 export const ImagenHeroe = ({ value }) => {
 
-    const ruta = `src/assets/heroes/${value}.jpg`;
+    const ruta = `./src/assets/heroes/${value}.jpg`;
     console.log(ruta);
     return (
         <>

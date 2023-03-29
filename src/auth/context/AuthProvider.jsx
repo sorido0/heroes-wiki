@@ -1,11 +1,16 @@
 
 import { useReducer } from 'react';
-import { types } from '../types/Types';
+//import { types } from '../types/Types';
 import { AuthContext } from './AuthContext';
 import { authReducer } from './authReducer';
 
 
 const estadoInicial = { }
+
+const types = {
+    login: 'login',
+    logout: 'logout',
+}
 
 const init = () => {
     const user = JSON.parse(localStorage.getItem('user'));

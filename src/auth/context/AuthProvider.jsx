@@ -12,6 +12,11 @@ const types = {
 
 const estadoInicial = { }
 
+const types = {
+    login: 'login',
+    logout: 'logout',
+}
+
 const init = () => {
     const user = JSON.parse(localStorage.getItem('user'));
 

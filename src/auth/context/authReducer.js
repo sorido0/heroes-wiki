@@ -1,5 +1,11 @@
 
-import { types } from './../types/types';
+//import { types } from './../types/types';
+
+
+const types = {
+    login: 'login',
+    logout: 'logout',
+}
 // Es el valor inicial de nuestro del reducer de auth
 const estadoInicial = {
     logged: false,

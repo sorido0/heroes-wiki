@@ -2,6 +2,7 @@
 import { useMemo } from 'react';
 import { Navigate, useParams, useNavigate } from 'react-router-dom';
 import { obtenerHeroePorId } from '../helpers';
+import { rurtas } from './../helpers/rutas';
 
 
 
@@ -22,13 +23,16 @@ export const Heroe = () => {
   if (!heroe) {
     return <Navigate to='/' />
   }
+
+  const ruta = rurtas(id);
+
  //console.log(id);
 
   return (
 
     <div className='row m-5'>
       <div className='col-4'>
-        <img src={`../src/assets/heroes/${id}.jpg`} alt={heroe.superhero} className='img-thumbnail animate__animated animate__fadeInLeft' />
+        <img src={ruta} alt={heroe.superhero} className='img-thumbnail animate__animated animate__fadeInLeft' />
       </div>
 
       <div className="col-8">

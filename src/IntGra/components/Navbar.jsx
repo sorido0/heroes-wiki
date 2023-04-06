@@ -9,19 +9,19 @@ export const Navbar = () => {
 
     //con el useContexte y AuthContext podemos hacer a los valores del usuario 
     // Como tenemos acceso al usuria podemos renderizar su nombre 
-     const { user, onLogout } = useContext( AuthContext);
-     //console.log(user)
+    //  const { user, onLogout } = useContext( AuthContext);
+    //  //console.log(user)
     
-     const navegar = useNavigate();
+    //  const navegar = useNavigate();
 
-    const elogin = () => {
-        location.reload();
-        navegar('/login',{
-            replace: true
-        });
+    // const elogin = () => {
+    //     location.reload();
+    //     navegar('/login',{
+    //         replace: true
+    //     });
 
-        onLogout();
-    }
+    //     onLogout();
+    // }
 
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
@@ -61,7 +61,7 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
+            {/* <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
                 <ul className="navbar-nav ml-auto">
 
                     <samp className='navbar-item nav-link text-primary'> 
@@ -75,7 +75,7 @@ export const Navbar = () => {
                         Logout
                     </button>
                 </ul>
-            </div>
+            </div> */}
         </nav>
     )
 }

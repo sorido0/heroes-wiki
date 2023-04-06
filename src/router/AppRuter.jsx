@@ -11,19 +11,21 @@ import { PrivateRouter } from './PrivateRouter';
 import { PubliRounter } from './PubliRounter';
 
 export const AppRuter = () => {
+
     return (
         <>
             {/* Router es inportado de react-router-dom es pare manerjar las rutas */}
             <Routes>
-                
+
                 {/* Router recibe barios parametros path Que el nombre de la ruta y el componente que se va a renderizar */}
                 <Route path="/login" element={
                     // el unico componente que esta dentro de las rutas publicas es el componente Login
                     <PubliRounter>
                         {/* // el componente Login es el componente que se va a renderizar */}
-                        <Login />
+                        <HeroesRoutes />
+                        {/* <Login /> */}
                     </PubliRounter>
-                } /> 
+                } />
 
 
                 <Route path='/*' element={
